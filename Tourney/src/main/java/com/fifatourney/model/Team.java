@@ -1,7 +1,10 @@
 package com.fifatourney.model;
+import javax.persistence.*;
 import java.util.*;
 
+
 public class Team {
+
     private int id;
     private Club club;
     private List<Player> players = new ArrayList<>();
