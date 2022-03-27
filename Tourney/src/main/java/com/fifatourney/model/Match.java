@@ -5,11 +5,19 @@ public class Match {
     private int id;
     private Team homeTeam;
     private Team awayTeam;
+    private String score;
 
-    public Match(int id, Team homeTeam, Team awayTeam) {
-        this.id = id;
+    public Match(Team homeTeam, Team awayTeam) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
+    }
+
+    public String getScore() {
+        return score;
+    }
+
+    public void setScore(String score) {
+        this.score = score;
     }
 
     public int getId() {
@@ -35,4 +43,15 @@ public class Match {
     public void setAwayTeam(Team awayTeam) {
         this.awayTeam = awayTeam;
     }
+
+    @Override
+    public String toString() {
+        return "Match{" +
+                "homeTeam=" + homeTeam +
+                ", awayTeam=" + awayTeam +
+                ", score='" + score + '\'' +
+                '}';
+
+    }
+
 }

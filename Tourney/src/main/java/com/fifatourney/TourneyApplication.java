@@ -1,9 +1,11 @@
-package com.fifatourney.Tourney;
+package com.fifatourney;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
+@ServletComponentScan
 public class TourneyApplication {
 
 	public static void main(String[] args) {

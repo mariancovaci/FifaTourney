@@ -5,7 +5,7 @@ public class TournamentGenerator {
     private  List<Player> playerList;
     private List<Club> clubList;
     private List<Team> teamList;
-
+    private List<Match> matchList = new ArrayList<>();
     public List<Club> getClubList() {
         return clubList;
     }
@@ -50,6 +50,26 @@ public class TournamentGenerator {
             team.setClub(club);
             clubListWork.remove(club);
         }
+    }
+
+    public List<Match> getMatchList() {
+        return matchList;
+    }
+
+    public void createTournament(){
+        for (Team team : teamList){
+            matchList.addAll(createHome(team,teamList));
+        }
+    }
+
+    List<Match> createHome(Team team,List<Team> teams){
+        List<Match> matchList = new ArrayList<>();
+        List<Team> teamList = new ArrayList<>(teams);
+        teamList.remove(team);
+        for (Team awayTeam : teamList){
+            matchList.add(new Match(team,awayTeam));
+        }
+        return matchList;
     }
 
 }

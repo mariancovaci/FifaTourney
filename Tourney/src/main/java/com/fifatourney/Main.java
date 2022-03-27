@@ -29,8 +29,11 @@ public class Main {
 
     TournamentGenerator tournament = new TournamentGenerator(playerList);
     tournament.setClubList(clubList);
+    tournament.createTournament();
         System.out.println(tournament.getTeamList());
-
+        System.out.println(tournament.getMatchList());
 
 }
 }
+
+

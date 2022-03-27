@@ -1,5 +1,4 @@
 package com.fifatourney.model;
-
 import java.util.*;
 
 public class Team {
