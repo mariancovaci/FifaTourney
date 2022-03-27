@@ -4,12 +4,12 @@ import java.util.*;
 
 
 public class Team {
-    private String name;
+    private int id;
     private Club club;
     private List<Player> players = new ArrayList<>();
 
-    public Team(String name, Club club, List<Player> players) {
-        this.name = name;
+    public Team(int id, Club club, List<Player> players) {
+        this.id = id;
         this.club = club;
         this.players = players;
     }
@@ -23,12 +23,12 @@ public class Team {
         this.players.add(player2);
     }
 
-    public String getName() {
-        return name;
+    public int getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Club getClub() {
@@ -54,9 +54,9 @@ public class Team {
     @Override
     public String toString() {
         return "Team{" +
-                "name='" + name + '\'' +
+                "id=" + id +
                 ", club=" + club +
                 ", players=" + players +
-                '}';
+                "}\n";
     }
 }

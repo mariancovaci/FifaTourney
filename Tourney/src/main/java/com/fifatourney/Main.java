@@ -15,8 +15,8 @@ public class Main {
                                             new Player("Alin"),
                                             new Player("Ion"),
                                             new Player("Vlad"),
-                                            new Player("Marian"),
-                                            new Player("Sergiu"));
+                                            new Player("Marian"));
+//                                            new Player("Sergiu"));
 
     List<Club> clubList = Arrays.asList(new Club("Barcelona"),
                                         new Club("Real Madrid"),
@@ -30,8 +30,7 @@ public class Main {
 
     TournamentGenerator tournament = new TournamentGenerator(playerList);
     tournament.setClubList(clubList);
-
-
+        System.out.println(tournament.getTeamList());
 
 
 }
