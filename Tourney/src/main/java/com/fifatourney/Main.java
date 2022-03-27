@@ -1,9 +1,8 @@
 package com.fifatourney;
 
-import com.fifatourney.Model.Club;
-import com.fifatourney.Model.Player;
-import com.fifatourney.Model.Tournament;
-import com.fifatourney.Model.TournamentGenerator;
+import com.fifatourney.model.Club;
+import com.fifatourney.model.Player;
+import com.fifatourney.model.TournamentGenerator;
 
 import java.util.*;
 public class Main {

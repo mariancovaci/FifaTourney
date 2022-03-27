@@ -1,4 +1,4 @@
-package com.fifatourney.Model;
+package com.fifatourney.model;
 
 import java.util.*;
 

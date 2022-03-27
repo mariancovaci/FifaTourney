@@ -1,7 +1,6 @@
-package com.fifatourney.Model;
+package com.fifatourney.model;
 
 import java.util.*;
-
 
 public class Team {
     private int id;

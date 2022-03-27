@@ -1,4 +1,4 @@
-package com.fifatourney.Model;
+package com.fifatourney.model;
 
 public class Match {
 
