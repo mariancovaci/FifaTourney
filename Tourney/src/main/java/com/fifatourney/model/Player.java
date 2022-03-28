@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "players")
+@Table(name = "player")
 public class Player implements Serializable {
 
     @Id
@@ -26,7 +26,8 @@ public class Player implements Serializable {
     @Override
     public String toString() {
         return "Player{" +
-                "playerName='" + playerName + '\'' +
+                "id=" + id +
+                ", playerName='" + playerName + '\'' +
                 '}';
     }
 }

@@ -16,7 +16,6 @@ public class PlayerController {
     @Autowired
     private final PlayerService playerService;
 
-
     public PlayerController(PlayerService playerService) {this.playerService = playerService;}
 
     @GetMapping("/all")

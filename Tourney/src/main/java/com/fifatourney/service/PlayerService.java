@@ -1,6 +1,6 @@
 package com.fifatourney.service;
 
-import com.fifatourney.exception.PlayerNotFoundException;
+import com.fifatourney.exception.ItemNotFoundException;
 import com.fifatourney.model.Player;
 import com.fifatourney.repository.PlayerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +27,7 @@ public class PlayerService {
 
     public Player findPlayerById(Long id){
         return playerRepo.findPlayerById(id)
-                .orElseThrow(()->new PlayerNotFoundException("Player with id " + id + " was not found"));
+                .orElseThrow(()->new ItemNotFoundException("Player with id " + id + " was not found"));
     }
     public void deletePlayer(Long id){
         playerRepo.deletePlayerById(id);
